@@ -7,10 +7,6 @@ Tvs      -> 1200px +
 */
 
 @media screen and (min-width : 650px) and (max-width : 992px){
-    body{
-        background-image: linear-gradient(to top , rgb(60, 8, 102) , rgb(156, 40, 202));
-    }
-
     #caixa-login{
         width: 80vh;
     }
