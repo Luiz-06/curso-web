@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            border: 2px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%,-50%);
+        }
+        thead{
+            background-color: red;
+        }
+        th, td{
+            border: 1px solid black;
+        }
+        td.num{
+            text-align: right;
+        }
+        tfoot{
+            background-color: red;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>População por Estado</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</td>
+                <td>0000000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

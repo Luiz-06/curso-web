@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grouping Tags</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-image: linear-gradient(to right, rgb(97, 97, 212), rgb(51, 51, 228));
+      text-align: justify;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      background-color: white;
+      width: 90%;
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+    }
+
+    header {
+      background-color: white;
+      width: 90%;
+      max-width: 300px;
+      height: 80px;
+      margin: 20px auto 30px;
+      box-shadow: 14px 13px 0 4px black;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: blue;
+      font-weight: bolder;
+    }
+
+    #assuntos, #noticias {
+      background-color: rgb(231, 229, 229);
+      border: 1px solid black;
+      border-radius: 3px;
+      margin: 10px 0;
+      padding: 10px;
+    }
+
+    #assuntos {
+      width: 100px;
+      text-align: center;
+    }
+
+    #noticias {
+      min-height: 200px;
+    }
+
+    @media screen and (max-width: 600px) {
+      main {
+        width: 95%;
+      }
+
+      header {
+        width: 95%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Divs</h1>
+    <nav>
+      <a href="https://www.youtube.com/watch?v=G1IbRujko-A&t=79s" target="_blank">Clique aqui</a>
+    </nav>
+  </header>
+  <main>
+    <section id="assuntos">blabla</section>
+    <section id="noticias">
+      <article>
+        <h2>Testando DIVS</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+          laudantium rem. Consectetur quis sapiente officiis, ipsum corporis
+          molestias saepe illo placeat et eaque cupiditate alias voluptatem
+          dicta maxime ab quod.
+        </p>
+        <aside>
+          <p>Jacinto Leite</p>
+        </aside>
+      </article>
+      <article>FIM</article>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+</head>
+<body>
+    <form action="dados.php" method="get">
+        <p>
+            <label for="mod">Modelo de Celular</label>
+            <select name="modelo" id="mod">
+                <option value="">...</option>
+                <optgroup label="Apple">
+                    <option value="AIP1132">Iphone 11 64gb</option>
+                    <option value="AIP11P128">Iphone 11 128gb</option>
+                    <option value="AIP11PM256">Iphone 11 256gb</option>
+                </optgroup>
+                <optgroup label="Samsung">
+                    <option value="AS2464">S24 64gb</option>
+                    <option value="AS24128">S24 128gb</option>
+                    <option value="AS24256">S24 256gb</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="espectec">Especificações</label>
+            <textarea name="espec" id="espectec" cols="30" rows="10"></textarea>
+        </p>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>

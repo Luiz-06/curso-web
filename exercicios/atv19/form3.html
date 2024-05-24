@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form3</title>
+    <style>
+        form{
+            background-color: rgb(44, 9, 110);
+            color: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.096);
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <form action="banco.php" method="get" oninput="idtotal.value= Number(idquant.value) * Number(idpreco.value)" autocomplete="on">
+        <p>
+            <label for="idproduto">Produto:</label>
+            <input type="text" name="produto" id="idproduto" required>
+        </p>
+        <p>
+            <label for="idpreco">Preço: R$</label>
+            <input type="number" name="preco" id="idpreco" required>
+        </p>
+        <p>
+            <label for="idquant">Quantidade</label>
+            <input type="number" name="quant" id="idquant" required min="1" placeholder="Pelo menos 1">
+        </p>
+        <p>
+            <label for="idtotal">Total: R$</label>
+            <output name="total" id="idtotal">0</output>
+        </p>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
