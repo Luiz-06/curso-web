@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.8;
+}
+
+body{
+    background-color: rgb(175, 175, 175);
+    height: 100vh;
+}
+div{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-size: 2.8em;
+}
+header > p{
+    font-size: 1.16em;
+    padding-bottom: 50px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.84em;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.imagem{
+    background-color: black;
+    color: white;
+    background-attachment: fixed;
+    background-position: right center;
+    background-size: cover;
+}
+.imagem > p{
+    background-color: rgba(0, 0, 0, 0.137);
+    display: inline-block;
+    font-size: 1.8em;
+    padding: 5px;
+}
+#c1{
+    background-image: url(imagens/background001.jpg);
+}
+#c2{
+    background-image: url(imagens/background002.jpg);
+}
+
+.normal{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.normal > .paragrafos{
+    font-size: 1.8em;
+}
+
+

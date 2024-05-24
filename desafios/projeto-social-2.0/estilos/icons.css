@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+img{
+    width: 93vw;
+}
+a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+a:hover{
+    background-color: rgb(56, 56, 56);
+}
